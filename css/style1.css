@@ -1,0 +1,105 @@
+/* navpanel start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url( "../images/img.jpg" );
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Navigation Pannel */
+.navpanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 8px 20px;
+    background-color: rgba(253, 123, 17, 0.5);
+    color: white;
+}
+
+.navpanel .hovereffect:hover {
+    opacity: 0.75;
+}
+
+.navpanel > * {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navpanel .navmenu > *, .navpanel .plus-button > *  {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 2px;
+    margin: 0px 4px;
+    background-color: rgba(228, 237, 240, 0.5);
+}
+
+.navpanel .navmenu {
+    justify-content: flex-start;
+}
+
+.navpanel .search-box {
+    background-color: transparent;
+    padding: 0;
+}
+
+.navpanel .search-box input {
+    width: 120px;
+    padding: 4px 0.5em;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color:  rgba(228, 237, 240, 0.5);
+    color: white;
+    font-size: 1.15em;
+    line-height: 1.4;
+    color: black;
+}
+
+.navpanel .search-box input:focus {
+    background-color: white;
+}
+
+.navpanel .page-title  {
+    justify-content: space-around;
+    font-family: Bahnschrift SemiBold;
+    font-size: 1.3em;
+}
+.hovereffect ,.board-title ,.board-show-menu pointer {
+    font-family: Bahnschrift SemiBold;
+}
+
+.navpanel .plus-button {
+    justify-content: flex-end;
+}
+
+/* Navigation bar2 */
+
+.board-container {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.board-menu {
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding: 0 20px;
+    color: black;
+    background-color: rgba( 128, 128, 128, 0.4 );
+    color: white;
+}
+/* navigation pannel end */
